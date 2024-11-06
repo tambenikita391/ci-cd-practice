@@ -12,6 +12,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: Java setup
+        uses: actions/setup-java
+        with:
+          distribution: "temurin"
+          java-version: "21
   
 
 
