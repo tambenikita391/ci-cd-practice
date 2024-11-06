@@ -1,4 +1,4 @@
-name: Practice of CI-CD actions
+name: Java CI
 
 on:
   push:
@@ -6,12 +6,12 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build-and-run:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@2
+        uses: actions/checkout@v3
   
 
 
