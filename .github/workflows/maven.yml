@@ -32,5 +32,8 @@ jobs:
       - name: List docker images
         run: docker image ls
 
+      - name: Push docker image in docker hub
+        run: docker push ${{secrets.DOCKER_REGISTRY_USER}}/addtwonumbers:latest
+
       
         
