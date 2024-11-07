@@ -19,3 +19,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '21'
+
+      - name: Check code formatter
+        run: mvn com.spotify.fmt:fmt-maven-plugin:check
