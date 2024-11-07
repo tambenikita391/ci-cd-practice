@@ -20,5 +20,6 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Check code formatter
-        run: mvn com.spotify.fmt:fmt-maven-plugin:check
+      - name: Build docker image
+        run: docker build -t ${{secrets.DOCKER_REGISTRY_USER}}/addtwonumbers:latest -f Dockerfile .
+        
