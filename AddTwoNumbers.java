@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class AddTwoNumbers {
     public static void main(String[] args) {
-        System.out.println"Program to print addition of two numbers");
+        System.out.println("Program to print addition of two numbers");
 
         Scanner r = new Scanner(System.in);
 
